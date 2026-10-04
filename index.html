@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1220">
+  <meta name="description" content="CalcPro is a fast, modern and free online calculator with scientific calculations, conversions, percentage, BMI, age and tip calculators.">
+  <meta name="keywords" content="online calculator, scientific calculator, unit converter, BMI calculator, tip calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CalcPro – Free Online Calculator">
+  <meta property="og:description" content="A fast, modern browser-only calculator for everyday decisions and precise work.">
+  <meta property="og:site_name" content="CalcPro">
+  <meta property="og:url" content="https://calcpro.example.com/">
+  <meta property="og:image" content="https://calcpro.example.com/assets/icons/icon-512.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CalcPro – Free Online Calculator">
+  <meta name="twitter:description" content="A fast, modern browser-only calculator for everyday decisions and precise work.">
+  <link rel="canonical" href="https://calcpro.example.com/">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon-192.svg" type="image/svg+xml">
+  <title>CalcPro – Free Online Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile-overrides.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="CalcPro home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44" role="img"><rect x="3" y="3" width="38" height="38" rx="12" fill="currentColor" opacity=".16"/><path d="M13 22a9 9 0 0 1 15.7-5.95M31 22a9 9 0 0 1-15.7 5.95" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="14" cy="15" r="2" fill="currentColor"/><circle cx="30" cy="29" r="2" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-copy"><strong>Calc<span>Pro</span></strong><small>CALCULATE WITH CLARITY</small></span>
+    </a>
+    <div class="header-actions">
+      <label class="mode-picker" for="modeSelect"><span class="sr-only">Calculator mode</span><span class="mode-icon" aria-hidden="true">✦</span><select id="modeSelect" aria-label="Choose calculator mode"><option value="standard">Standard</option><option value="scientific">Scientific</option><option value="percentage">Percentage</option><option value="tip">Tip Calculator</option><option value="bmi">BMI Calculator</option><option value="age">Age Calculator</option><option value="unit">Unit Converter</option></select><span class="chevron" aria-hidden="true">⌄</span></label>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme"><span id="themeIcon" aria-hidden="true">☼</span></button>
+      <button class="history-trigger" id="historyToggle" type="button" aria-controls="historyPanel" aria-expanded="false"><span class="history-icon" aria-hidden="true">↺</span><span class="history-label">History</span></button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero-row" aria-labelledby="pageTitle">
+      <div>
+        <div class="eyebrow"><span class="status-dot"></span> Browser-only · Private by default</div>
+        <h1 id="pageTitle">Clear thinking,<br><em>calculated.</em></h1>
+        <p class="hero-copy">A calm, capable calculator workspace for everyday decisions and precise work.</p>
+      </div>
+      <div class="hero-note" aria-label="Product note"><span class="hero-note-mark">⌁</span><span>Fast, focused<br><strong>and always yours.</strong></span></div>
+    </section>
+
+    <div class="app-layout">
+      <section class="workspace" aria-label="Calculator workspace">
+        <div class="workspace-topline"><div><span class="section-kicker">CALCPRO WORKSPACE</span><h2 id="workspaceTitle">Standard calculator</h2></div><div class="workspace-meta"><span class="secure-badge"><span aria-hidden="true">◈</span> No data leaves your browser</span></div></div>
+        <div id="calculatorView" class="calculator-view">
+          <noscript><div class="noscript-card"><strong>JavaScript is required for CalcPro.</strong><p>Enable JavaScript to use the interactive calculator. The app has no backend and does not send your calculations anywhere.</p></div></noscript>
+        </div>
+      </section>
+
+      <aside class="history-panel" id="historyPanel" aria-label="Calculation history" aria-hidden="true">
+        <div class="history-header"><div><span class="section-kicker">YOUR WORK</span><h2>History</h2></div><button class="close-history" id="closeHistory" type="button" aria-label="Close history">×</button></div>
+        <div class="history-summary"><span class="history-count" id="historyCount">0 calculations</span><button class="text-button" id="clearHistory" type="button">Clear all</button></div>
+        <div class="history-list" id="historyList"></div>
+        <div class="history-empty" id="historyEmpty"><span class="empty-orbit" aria-hidden="true">◌</span><strong>No calculations yet</strong><p>Your recent work will appear here, ready to reuse.</p></div>
+        <div class="history-footnote"><span aria-hidden="true">⌘</span> Stored locally on this device</div>
+      </aside>
+    </div>
+
+    <section class="seo-copy" aria-labelledby="whyCalcPro">
+      <div><span class="section-kicker">ONE TOOL, MANY MOMENTS</span><h2 id="whyCalcPro">The numbers you need,<br><span>without the noise.</span></h2></div>
+      <p>CalcPro brings standard and scientific math together with percentage, tip, BMI, age, and unit conversion tools. It is fast, responsive, and designed to keep your work private in the browser.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><span class="footer-mark">C<span>·</span>P</span><span><strong>CalcPro</strong><small>Frontend-only calculator</small></span></div><div class="footer-privacy"><span class="privacy-check" aria-hidden="true">✓</span> Your calculations stay in your browser</div><div class="footer-copy">© 2026 CalcPro</div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/scientific.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/converters.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

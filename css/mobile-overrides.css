@@ -1,0 +1,32 @@
+/* The smallest phone breakpoint keeps the full control set visible without overflow. */
+@media (max-width: 340px) {
+  .site-header { padding-left: 12px; padding-right: 12px; gap: 4px; }
+  .brand { gap: 6px; }
+  .brand-mark { width: 34px; height: 34px; border-radius: 11px; }
+  .brand-copy strong { font-size: .98rem; }
+  .header-actions { gap: 5px; }
+  .mode-picker { max-width: 90px; height: 36px; padding-left: 6px; padding-right: 18px; gap: 5px; }
+  .mode-picker select { max-width: 55px; font-size: .67rem; }
+  .mode-icon { font-size: .85rem; }
+  .icon-button, .history-trigger { width: 34px; height: 36px; padding: 0; font-size: .92rem; }
+  .history-trigger { display: grid; place-items: center; }
+  .history-icon { font-size: 1rem; }
+  .page-shell { padding-left: 12px; padding-right: 12px; }
+}
+
+.history-item-main {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.history-item-main:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
